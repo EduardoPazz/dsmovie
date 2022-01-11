@@ -1,3 +1,5 @@
-const Listing = () => <h1>Página de listagem</h1>;
+import Pagination from "components/Pagination";
+
+const Listing = () => <Pagination />;
 
 export default Listing;
