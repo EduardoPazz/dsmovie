@@ -26,8 +26,9 @@ public class Movie {
     public Movie() {
     }
 
-    public Movie(Long id, Double score, Integer count, String image) {
+    public Movie(Long id, String title, Double score, Integer count, String image) {
         this.id = id;
+        this.title = title;
         this.score = score;
         this.count = count;
         this.image = image;
