@@ -1,0 +1,19 @@
+services:
+  postgres_db:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: 1234567
+      POSTGRES_USER: "postgres"
+      POSTGRES_DB: "dsmovie"
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - 80:80
+    depends_on:
+      - postgres_db
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "jooeduardo8@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: 1234567
+
